@@ -10,36 +10,36 @@
     }
 </style>
 
-<script type="text/javascript">
-    // set your interval in milliseconds
-    var reloadInterval = 5000;
-    // this will run when the document is fully loaded
-    function init() {
-        //setTimeout('reload()', reloadInterval);
-    }
-    // this reloads the iframe, and triggers the next reload interval
-    function reload() {
-        var iframes = document.getElementsByTagName('iframe');
-        if (!iframes)
-            return false;
+<!--<script type="text/javascript">-->
+<!--    // set your interval in milliseconds-->
+<!--    var reloadInterval = 5000;-->
+<!--    // this will run when the document is fully loaded-->
+<!--    function init() {-->
+<!--        //setTimeout('reload()', reloadInterval);-->
+<!--    }-->
+<!--    // this reloads the iframe, and triggers the next reload interval-->
+<!--    function reload() {-->
+<!--        var iframes = document.getElementsByTagName('iframe');-->
+<!--        if (!iframes)-->
+<!--            return false;-->
 
-        for (var i = 0; i < iframes.length; i++)
-            iframes[i].src = iframes[i].src;
+<!--        for (var i = 0; i < iframes.length; i++)-->
+<!--            iframes[i].src = iframes[i].src;-->
 
-        //setTimeout('reload()', reloadInterval);
-        reloading=reloadInterval;
-    }
-    reloading=reloadInterval;
-    var x = setInterval(function() {
-        reloading-=1000;
-        document.getElementById('status').innerText=(reloading/1000)+'/s Reload';
-        if(reloading<1)
-        {
-            location.reload();
-            //reload();
-        }
-    }, 1000);
-</script>
+<!--        //setTimeout('reload()', reloadInterval);-->
+<!--        reloading=reloadInterval;-->
+<!--    }-->
+<!--    reloading=reloadInterval;-->
+<!--    var x = setInterval(function() {-->
+<!--        reloading-=1000;-->
+<!--        document.getElementById('status').innerText=(reloading/1000)+'/s Reload';-->
+<!--        if(reloading<1)-->
+<!--        {-->
+<!--            location.reload();-->
+<!--            //reload();-->
+<!--        }-->
+<!--    }, 1000);-->
+<!--</script>-->
 
 </head>
 
